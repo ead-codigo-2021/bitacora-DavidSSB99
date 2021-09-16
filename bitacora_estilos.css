@@ -1,57 +1,92 @@
+/*reset de estilos*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 400px){
+    html{
+        font-size: 13px;
+    }
+    
+}
+
+
+html{
+    font-size: 16px;
+}
+
+
 body{
     font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
-    background-image: url(imagen/fondo_1.png);
+    font-size: rem;
+    line-height: 1.5;
+    background-image: url(imagen/fondo_2.png);
     background-size: cover;
     margin: 50px;
     color: #0A4487;
     font-weight: 400;
+    max-width: 1500px;
 }
 
-.barra{
-    height: 130px;
+.site-navigation{
+    height: 90px;
     background-color: rgba(82, 174, 255, 1);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
     box-shadow: 5px 10px 4px rgba(61, 29, 87, 0.699) ;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
 }
 
 .logo{
-    width: 110px;
-    margin-top: 10px;
-    margin-left: 30px;
-    position: absolute
+    width: inherit;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-ul{
-    margin-left: 100px;
-    text-align: center;
-    list-style-type: none;
-}
 
-li{
-    padding-top: 50px;
-    display: inline-block;
-}
-
-a{
-    font-size: 20px;
+.site-navigation a{
+    font-size: 1rem;
     font-weight: bold;
-    padding-left: 40px;
-    padding-right: 40px;
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
+    padding: 2rem;
 
 }
-a:hover{
+.site-navigation a:hover{
     text-decoration: underline;   
 }
 
-a:visited{
+.site-navigation a:visited{
     color: rgb(174, 255, 82);
 }
 
-.bloque{
+.container{
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-posts__title{
+
+    padding: 30px;
+    color: rgba(255, 220, 81, 1);
+}
+
+.home-presentation__title{
+    color: #0A4487;
+}
+
+
+
+.home-presentation{
     margin-bottom: 100px;
     background-color: rgba(255, 220, 81, 1);
     border-bottom-left-radius: 10px;
@@ -61,8 +96,8 @@ a:visited{
     box-shadow: inset -5px 10px 4px rgba(61, 29, 87, 0.34545) ;
 }
 
-.bloque1{
-    margin-top: 100px;
+.home-post{
+    margin-top: 50px;
     margin-bottom: 100px;
     background-color: rgba(255, 220, 81, 1);
     border-top-left-radius: 10px;
@@ -76,10 +111,12 @@ a:visited{
 footer{
     background-color: rgba(255, 220, 81, 1);
     border-radius: 10px;
+    margin-bottom: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 10px 10px 10px 10px;
     box-shadow: 5px 10px 4px rgba(61, 29, 87, 0.699) ;
     box-shadow: inset -5px 10px 4px rgba(61, 29, 87, 0.34545) ;
     bottom: 0px;
-    position: absolute;
-    width: 92%;
+
 }

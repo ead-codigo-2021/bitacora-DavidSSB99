@@ -13,33 +13,74 @@
      <link rel="stylesheet" href="bitacora_estilos.css"
 </head>
 <body>
-    <div class="barra">
-        <img class="logo" src="imagen/logo_pequeño.png" alt="Imaginautas">
-        <ul>
-            <li><a href=index.html>inicio</a></li>
-            <li><a href="notas.html">notas</a></li>
-            <li><a href="https://wiki.ead.pucv.cl/David_Silva_Bernales">wiki</a></li>
-            <li><a href="sobre-mi.html">sobre mí</a></li>
-            <li><a href="">links de interés</a></li>
-        </ul>
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-navigation">
+                <img class="logo" src="imagen/logo_pequeño.png" alt="Imaginautas">
+                <a href=index.html>inicio</a>
+                <a href="notas.html">notas</a>
+                <a href="https://wiki.ead.pucv.cl/David_Silva_Bernales">wiki</a>
+                <a href="sobre-mi.html">sobre mí</a>
+                <a href="">links de interés</a>
+            </nav>
         </div>
+    </header>
+    <div class="container">
+        <section class="home-section home-posts">
+            <h1 class="home-section__title home-posts__title">Últimas entradas</h1>
+            <article class="home-post">
+                <h2 class="home-post__title">Clase 5</h2>
+                <div class="home-post__pubdate">Publicado el <time>10 de septiembre de 2021</time></div>
+                <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
+                <div class="home-post__content">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
 
-    <div class="bloque" >
-        <p>Esta es la pasada al limpio de datos del cuaderno de las primeras dos clases que fueron el <time datetime="2021-08-13">13 y 
-        </time><time datetime="2021-08-2020">18 de agosto</time>:<p>
-        <p><strong>Obetivos del curso:</strong> el manejo de herramientas de implementación de proyectos digitales como en los lenguajes 
-            de Tecnologías de la Web Abierta:<em>HTML; CSS; Java Script</em> Usando las reglas base de redacción con <strong>Git Hub</strong> y <strong>Visual Studio Code.</strong></p>
-        <p><strong>Git Hub</strong> sería la plataforma donde nuestras bitácoras estarían guardadas con registro de los cambios hechos al código en <strong>Visual Studio.</strong> </p>
-        <p><strong>Responsive Web Design</strong> Es el concepto de que el contenido de una página se adapte a la pantalla en la que se muestra sin perder la visión y legibilidad del diseño.</p>
-        <p><strong>Arquitectura de contenido:</strong> la jerarquización de todos los documentos de un sitio, comprender las relaciones entre datos, contenidos e interfaz.</p>
-        
+            <article class="home-post">
+                <h2 class="home-post__title">Clase 4</h2>
+                <div class="home-post__pubdate">Publicado el <time>3 de septiembre de 2021</time></div>
+                <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
+                <div class="home-post__content">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
+
+            <article class="home-post">
+                <h2 class="home-post__title">26 de Agosto y Clase 3</h2>
+                <div class="home-post__pubdate">Publicado el <time>27 de agosto de 2021</time></div>
+                <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
+                <div class="home-post__content">
+                    <p>Noté problemas al hacer los commit en los archivos en la plataforma git de escritorio, los problemas 
+                        empezaron trasd hacer una rama para editar el index.</p>
+                        <p>Ni la carpeta de git en el escritorio del VSCode, ni la interfaz de Git, coinciden con los tipos de archivos y carpetas. Ojalá que el enredo ni lleve a perder
+                        lo logrado. Tendré que preguntar mañana.</p>
+                </div>
+            </article>
+
+            <article class="home-post">
+                <h2 class="home-post__title">Clase 2</h2>
+                <div class="home-post__pubdate">Publicado el <time>20 de agosto de 2021</time></div>
+                <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
+                <div class="home-post__content">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
+
+            <article class="home-post">
+                <h2 class="home-post__title">Clase 1</h2>
+                <div class="home-post__pubdate">Publicado el <time>13 de agosto de 2021</time></div>
+                <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
+                <div class="home-post__content">
+                    <p><strong>Objetivos del curso:</strong> el manejo de herramientas de implementación de proyectos digitales como en los lenguajes 
+                        de Tecnologías de la Web Abierta:<em>HTML; CSS; Java Script</em> Usando las reglas base de redacción con <strong>Git Hub</strong> y <strong>Visual Studio Code.</strong></p>
+                    <p><strong>Git Hub</strong> sería la plataforma donde nuestras bitácoras estarían guardadas con registro de los cambios hechos al código en <strong>Visual Studio.</strong> </p>
+                    <p><strong>Responsive Web Design</strong> Es el concepto de que el contenido de una página se adapte a la pantalla en la que se muestra sin perder la visión y legibilidad del diseño.</p>
+                    <p><strong>Arquitectura de contenido:</strong> la jerarquización de todos los documentos de un sitio, comprender las relaciones entre datos, contenidos e interfaz.</p>
+                </div>
+            </article>        
+        </section>
+        <footer>experimento de bitácora virtual  </footer>
     </div>
-    <div class="bloque1" >
-        <p>Este <time datetime="2021-08-26">26 de agosto</time> noté problemas al hacer los commit en los archivos en la plataforma git de escritorio, los problemas 
-         empezaron trasd hacer una rama para editar el index.</p>
-         <p>Ni la carpeta de git en el escritorio del VSCode, ni la interfaz de Git, coinciden con los tipos de archivos y carpetas. Ojalá que el enredo ni lleve a perder
-         lo logrado. Tendré que preguntar mañana.</p>
-    </div>
-    <footer>experimento de bitácora virtual  </footer>
 </body>
 </html>
