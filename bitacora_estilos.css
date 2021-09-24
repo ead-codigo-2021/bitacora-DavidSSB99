@@ -68,6 +68,20 @@ body{
     color: rgb(174, 255, 82);
 }
 
+ a{
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0A4487;
+    padding: 2rem;
+}
+ a:hover{
+    text-decoration: underline;   
+}
+
+ a:visited{
+    color: rgb(81, 206, 255);
+}
 .container{
     max-width: 1500px;
     margin-left: auto;
