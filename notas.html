@@ -21,7 +21,7 @@
                 <a href="notas.html">notas</a>
                 <a href="https://wiki.ead.pucv.cl/David_Silva_Bernales">wiki</a>
                 <a href="sobre-mi.html">sobre mí</a>
-                <a href="">links de interés</a>
+                <a href="links-interes.html">links de interés</a>
             </nav>
         </div>
     </header>
@@ -36,32 +36,33 @@
                     <p><strong>Clase práctica.</strong></p>
                     <p>A través con Life Share, una extensión donde más de un usuario pueden editar los códigos. Aconcejando en el readme la creción de la Arquitectura de Contenido.</p><br>
                     <p>Ejemplo de su arquitectura de contenido:</p>
-                   <div class="block-list">
-                    <ul>
-                        <li>Título</li>
-                        <li>Fecha</li>
-                        <li>Descripción</li>
-                        <li>Presentación</li>
-                        <li>Clase Grabada</li>
-                    </ul>
-                    </div>
-                    <div class="block-list-2">
+                    <div class="lists">
+                        <div class="block-list">
                         <ul>
-                            <li>Blog</li>
-                            <li>Entrada</li>
                             <li>Título</li>
-                            <li>Contenido</li>
                             <li>Fecha</li>
-                            <li>Autor</li>
-                            <li>Categoría</li>
+                            <li>Descripción</li>
+                            <li>Presentación</li>
+                            <li>Clase Grabada</li>
                         </ul>
                         </div>
-                    <p>Además de que en el Read Me estuviera descrito el resumen de la aplicación del proyecto, su historia.</p>
-                    <p>Se entregan datos para agilizar la redacción como el <em>a: link x2</em>, junto con la recomendación de especificar con las etiquetas y poder ordenar mejor código.</p>
-                    <p>Introduciendo las <em>cite</em> para el autor, los "--" y "__" como organizadores de etiquetas, junto a las etiquetas espécificas.</p>
-                    <div class="imagen--notas1>"
-                        <img class="screenshot-code" src="imagenes_notas/screenshot-code.png" alt=code>
+                        <div class="block-list-2">
+                            <ul>
+                                <li>Blog</li>
+                                <li>Entrada</li>
+                                <li>Título</li>
+                                <li>Contenido</li>
+                                <li>Fecha</li>
+                                <li>Autor</li>
+                                <li>Categoría</li>
+                            </ul>
+                        </div>
                     </div>
+                    <br> <br> <br> <br> <br> <br> <br> <br> 
+                    <p>Además de que en el Read Me estuviera descrito el resumen de la aplicación del proyecto, su historia.</p>
+                    <p>Se entregan datos para agilizar la redacción como el <em>a: link x2</em>, con la recomendación de especificar con las etiquetas y poder ordenar mejor código.</p>
+                    <p>Introduciendo las <em>cite</em> para el autor, los "--" y "__" como organizadores de etiquetas, usando la clase <em>container</em> para ordenar de mejor manera.</p>
+                        <img class="screenshot-code" src="imagenes_notas/screenshot-code.png" alt=code>
                 </div>
             </article>
 
@@ -70,7 +71,15 @@
                 <div class="home-post__pubdate">Publicado el <time>3 de septiembre de 2021</time></div>
                 <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
                 <div class="home-post__content">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Introducción a las Variables CSS:</p>
+                    <p><strong>:root { --primary-color: #bf4b31;}</strong>, es una entidad que guarda un valor para poder reutilizarlo, lo que significa un ahorro al momento de codificar en CSS da consistencia a todo el sitio.</p>
+                    <img class="screenshot-code-2" src="imagenes_notas/screenshot-2.png" alt=code>
+                    <p>En la inclusión de Tipografía están las opciones de uso de tipografías variables o fijas:</p>
+                    <p><strong>@fontface</strong>,<strong>font-family: 'Open Sans', Helvetica,Arial, sans-serif;</strong> ejemplo de codigo de una fuente en CSS. Las fuentes variables permiten tener las variables de una tipografía en un solo archivo.</p>
+                    <p>El tamaño del texto, su interlineado y el espacio de las palabras dependen de <strong>font-size</strong>, <strong>line-height</strong>, <strong>letter-spacing</strong>, <strong>word-spacing</strong></p>
+                    <p>A mayor <strong>font-size</strong> mayor <strong>font-head</strong> y se recomienda que los párrafos sean de 75 caracteres por párrafo. <strong>text-transform:</strong> edita el uso de mayúsculas: <strong>Uppercase:</strong> HOLA MUNDO,<br>
+                    <strong>Lowercase:</strong> hola mundo, <strong>Capitalize:</strong>Hola Mundo</p>
+
                 </div>
             </article>
 
@@ -81,8 +90,28 @@
                 <div class="home-post__content">
                     <p>Noté problemas al hacer los commit en los archivos en la plataforma git de escritorio, los problemas 
                         empezaron trasd hacer una rama para editar el index.</p>
-                        <p>Ni la carpeta de git en el escritorio del VSCode, ni la interfaz de Git, coinciden con los tipos de archivos y carpetas. Ojalá que el enredo ni lleve a perder
+                    <p>Ni la carpeta de git en el escritorio del VSCode, ni la interfaz de Git, coinciden con los tipos de archivos y carpetas. Ojalá que el enredo ni lleve a perder
                         lo logrado. Tendré que preguntar mañana.</p>
+                        <img class="screenshot-code" src="imagenes_notas/screenshot-3.PNG" alt=code>
+                    <p>Partes de un URL. Tras ver en la clase esa estructura pasamos a <strong> a href=“http://ead.pucv.cl" /a</strong></strong> el código de hipervínculos, puede ser en <strong>href=”equipo/marta.html”</strong> vínculos desde el domimnio si está en una carpeta
+                    y también como <strong>href=”cristobal.html”</strong> si está en la misma carpeta que el archivo que los está llamando; si está dentro de una subcarpeta se puede llamar con <strong>../</strong> <strong>href=”../empresa/acerca-de/mision.html”</strong>
+                    para subir un nivel de las carpetas y encontrar el archivo.</p>
+                    <p><strong>Introducción al CSS</strong>.</p>
+                    <p>Como se escribe un comentario de CSS<strong>/*no se codifica */</strong>.<br>
+                    Como se escribe en el CSS un selector, que toma un componente del HTML dándole atributos visuales y de posición: <br>
+                    <strong>.selector{ <br>propiedad: valor;<br>}</strong></p>
+                    <p>Ejemplo:</p>
+                    <p><strong>.card__title,<br>
+                       .card__subtitle {<br>
+                        font-weight: 700;<br>
+                        line-height: 1.2;<br>
+                        margin: 0 0 1rem;<br>
+                       }</strong><br>
+                    Allí se muestra como se pueden sumar selectores por medio del uso de la "," el uso de guión reemplaza el espaciado ya que su uso implica a que el CSS tome lo escrito a la derecha del espaciado como un selector más específico.<br>
+                    Sobre la especificidad del CSS, la cascada de estilo permite que atributos de un elemento se heredadan a los dependientes, es decir, los que se escriben despúes. Si el selector de "body" tiene un color verde de la fuente y un selector h1 tiene un color amarillo, 
+                    se codificara en el h1 el color amarillo, al ser más específico. 
+                    </p>
+
                 </div>
             </article>
 
@@ -91,8 +120,16 @@
                 <div class="home-post__pubdate">Publicado el <time>20 de agosto de 2021</time></div>
                 <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
                 <div class="home-post__content">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>HTML: HyperText Markup Language/Lenguaje de Marcado para Hipertextos.<br>
+                    Es un lenguaje que utiliza un sistema de etiquetas o corchetes y contenido: <strong><address>"Matta 12, Viña del Mar"</address></strong></p>
+                    Esas etiquetas pueden incluir otras etiquetas, lo que se denomina anidación. Y para poder tener un orden se recomienda identar, para que visualmente sea más fácil de leer y revisar, todo lo escrito
+                    debe tener cuidado del uso de mayúsculas, ocupar comillas dobles, tener cuidado con tener cerradas las etiquetas.</p>   
+                    <p>La estructura del HTML se compone por <strong>head</strong> que tienen los metadatos, <strong>body</strong> que es lo qel usuario ve e interactúa, existen un gran universo de etiquetas que están más 
+                    detalladas en las presentaciones y links recomendados de los docentes.</p>
+                    <p>Las etiquetas con su nombre y propiedades jerarquizan y estructuran el contenido de la página: <strong>div</strong>, <strong>span</strong>, <strong>header</strong>, <strong>nav</strong>, <strong>aside</strong>, <strong>article</strong>, <strong>footer</strong>, entre otras.</p>
+                    <p><strong><! --Título Sitio Web-- ></strong> comentario en HTML. </p>
                 </div>
+
             </article>
 
             <article class="home-post">
@@ -101,10 +138,13 @@
                 <div class="home-post__author">Autor: <cite>David S. Silva Bernales</cite></div>
                 <div class="home-post__content">
                     <p><strong>Objetivos del curso:</strong> el manejo de herramientas de implementación de proyectos digitales como en los lenguajes 
-                        de Tecnologías de la Web Abierta:<em>HTML; CSS; Java Script</em> Usando las reglas base de redacción con <strong>Git Hub</strong> y <strong>Visual Studio Code.</strong></p>
+                    de Tecnologías de la Web Abierta:<em>HTML; CSS; Java Script</em> Usando las reglas base de redacción con <strong>Git Hub</strong> y <strong>Visual Studio Code.</strong></p>
                     <p><strong>Git Hub</strong> sería la plataforma donde nuestras bitácoras estarían guardadas con registro de los cambios hechos al código en <strong>Visual Studio.</strong> </p>
                     <p><strong>Responsive Web Design</strong> Es el concepto de que el contenido de una página se adapte a la pantalla en la que se muestra sin perder la visión y legibilidad del diseño.</p>
                     <p><strong>Arquitectura de contenido:</strong> la jerarquización de todos los documentos de un sitio, comprender las relaciones entre datos, contenidos e interfaz.</p>
+                    <p>lo que lleva al pensar el desarrollo de componentes de la interfaz, en como se navegará, eso gracias al Cacade Style Sheet que es CSS lo que actúa como la piel del sitio. Tomando en cuenta  otras capas como que es lo más eficiente en el desarrollo y desempeño del sitio, que tan accesible, inclusivo, adaptable o universal es.<br>
+                    El aprendizaje y aplicación de los conceptos se materializarán en una bitácora virtual</p>
+                    
                 </div>
             </article>        
         </section>
