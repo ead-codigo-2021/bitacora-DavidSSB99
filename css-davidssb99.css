@@ -1,0 +1,80 @@
+/*reset de estilos*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Variables*/
+:root{
+    --font-family-base: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+    --font-family-alt: 'Roboto Slab', serif;
+    --background-image: url(imagen/fondo_2.png);
+    --color-dark: ##0A4487;
+    --color-white: #ffdc51;
+    --max-width-container: 1000px;
+}
+
+/*Body*/
+
+body{
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background-image: var(--background-image);
+    color: var(--color-dark);
+}
+
+/*Contendor primario*/
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 95% 1fr;
+    grid-template-rows:  20% 1fr 20%;
+}
+
+/*Barra de inicio*/
+
+.site-header{
+    display: flex;
+    flex-direction: initial;
+}
+
+.site-navigation{
+    height: 90px;
+    background-color: rgba(82, 174, 255, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    box-shadow: 5px 10px 4px rgba(61, 29, 87, 0.699) ;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    min-width: 400px;
+}
+
+.logo{
+    width: inherit;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.site-navigation a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.site-navigation a:hover{
+    text-decoration: underline;   
+}
+
+.site-navigation a:visited{
+    color: rgb(174, 255, 82);
+}
