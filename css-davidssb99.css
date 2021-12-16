@@ -23,7 +23,9 @@ body{
     line-height: 1.5;
     background-image: url(imagen/fondo_2.png);
     background-size: cover;
-    margin: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-weight: 400;
     max-width: 1500px;
     min-height: 100vh;
