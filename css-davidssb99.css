@@ -30,7 +30,7 @@ body{
     max-width: 1500px;
     min-height: 100vh;
     position: relative;
-    padding-bottom: 0rem;
+    padding-bottom: 2.5rem;
 }
 
 .site-navigation{
@@ -96,6 +96,11 @@ body{
     color: #0A4487;
 }
 
+.home-posts__title{
+    padding: 30px;
+    color: rgba(255, 220, 81, 1);
+}
+
 .home-presentation{
     background-color: rgba(255, 220, 81, 1);
     border-bottom-left-radius: 10px;
@@ -112,6 +117,21 @@ body{
     padding-right: 20%;
     padding-bottom: 10%;
 }
+
+.home-post{
+    color:#0A4487;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgba(255, 220, 81, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 50px 40px 40px 40px;
+    box-shadow: 5px 10px 4px rgba(61, 29, 87, 0.699) ;
+    box-shadow: inset -5px 10px 4px rgba(61, 29, 87, 0.34545);
+}
+
 footer{
     background-color: rgba(255, 220, 81, 1);
     color:#0A4487;
